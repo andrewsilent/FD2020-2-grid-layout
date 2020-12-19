@@ -1,0 +1,27 @@
+.overlay {
+    display: none;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.overlay-row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1210px;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.overlay-col {
+    --width: calc((100%/12*1));
+    width: var(--width);
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-left: 5px solid #FFF;
+    border-right: 5px solid #FFF;
+}

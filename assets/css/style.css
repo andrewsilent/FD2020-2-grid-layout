@@ -27,19 +27,33 @@
     padding: 1rem 2rem;
 }
 
+.features .icon-wrapper {
+    height: 5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
 .features .icon {
     max-height: 5rem;
-    margin-bottom: 1.5rem;
+    height: inherit;
+    object-fit: cover;
 }
 
 .features .title {
     text-transform: uppercase;
     font: 700 0.875rem/1.25 Arial, sans-serif;
     margin-bottom: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 
 .features .description {
     font: 400 0.875rem/1.25 Arial, sans-serif;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    overflow: hidden;
 }
 
 .btn {
